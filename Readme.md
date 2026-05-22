@@ -59,8 +59,8 @@ python3 visualize_cam_poses.py ../data/camera_poses_lie.txt --board_size=0.24 --
 根据下面的公式可以计算得到不确定的尺度因子，从而可以还原出R(使用`SVD`分解后，将左右特征矩阵相乘得到R，判断行列式的正负性)，T（一般情况下，我们建立的相机坐标系Z轴是朝着相机方向的，所以还要进行一步深度判断，也就是在进行下面操作之前，根据T的深度正负来处理尺度符号）
 $$
 \mathbf{s} \begin{bmatrix}
- \vec{\mathbf{r}}_1 & \vec{\mathbf{r}}_2 & \vec{\mathbf{t}}\\
-\end{bmatrix} = \mathbf{K}^{-1} \mathbf{H} 
+ \vec{\mathbf{r}}_1 & \vec{\mathbf{r}}_2 & \vec{\mathbf{t}}
+\end{bmatrix} = \mathbf{K}^{-1} \mathbf{H}
 $$
 
 $$
