@@ -60,13 +60,17 @@ python3 visualize_cam_poses.py ../data/camera_poses_lie.txt --board_size=0.24 --
 $$
 \mathbf{s} \begin{bmatrix}
  \vec{\mathbf{r}}_1 & \vec{\mathbf{r}}_2 & \vec{\mathbf{t}}\\
-\end{bmatrix} = \mathbf{K}^{-1} \mathbf{H} \\\
+\end{bmatrix} = \mathbf{K}^{-1} \mathbf{H} 
+$$
 
+$$
 \left\{\begin{matrix}
  \mathbf{\vec{\mathbf{r}_i}}^T \mathbf{\vec{\mathbf{r}_i}} = 1 \\
  \mathbf{\vec{\mathbf{r}_i}}^T \mathbf{\vec{\mathbf{r}_j}} = 0
-\end{matrix}\right. \\\
+\end{matrix}\right.
+$$
 
+$$
 \mathbf{s} = \left \| {\mathbf{K}^{-1} \mathbf{h}_1} \right \|
 $$
 
